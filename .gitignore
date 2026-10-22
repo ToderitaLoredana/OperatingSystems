@@ -1,0 +1,22 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+*.o
+*.out
+
+# Local build and run artifacts
+out.txt
+access.log
+report.log
+
+# Legacy report-generation workspace retained locally; curated final artifacts
+# live under labs/ and reports/.
+/Lab3-4_TacuIgor_FAF-242.pdf
+/Lab3-4_TacuLoredana_FAF-242 (1).pdf
+/build_lab3_report.py
+/build_lab34_report.py
+/build_lab78_report.py
+/build_lab78_report_igor.py
+/output/
+/qa/
+/report_assets/

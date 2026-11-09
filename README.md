@@ -1,7 +1,7 @@
-# Operating Systems Laboratory Works 1–8
+# Operating Systems Laboratory Works 1–10
 
 This repository contains the task sheets, implementation files, and reports for
-Laboratory Works 1 through 8 from the Operating Systems course (FCIM/FAF, UTM).
+Laboratory Works 1 through 10 from the Operating Systems course (FCIM/FAF, UTM).
 
 Student: **Tacu Loredana**
 
@@ -19,6 +19,8 @@ Group: **FAF-242**
 | 6 | Inside the xv6 File System | [`labs/lab06`](labs/lab06) | [`reports/labs05-06`](reports/labs05-06) |
 | 7 | Three Small Programs: Processes, Redirection, and a Pipe | [`labs/lab07`](labs/lab07) | [`reports/labs07-08`](reports/labs07-08) |
 | 8 | The Same Calls Inside xv6 | [`labs/lab08`](labs/lab08) | [`reports/labs07-08`](reports/labs07-08) |
+| 9 | Watching System Calls with strace | [`labs/lab09`](labs/lab09) | [`reports/labs09-10`](reports/labs09-10) |
+| 10 | Adding the trace System Call to xv6 | [`labs/lab10`](labs/lab10) | [`reports/labs09-10`](reports/labs09-10) |
 
 Combined reports are stored once and linked from both relevant laboratory rows.
 Editable DOCX and final PDF versions are included where available.
@@ -37,6 +39,13 @@ Lab 7 programs can be checked with a normal C compiler:
 cc -std=c11 -Wall -Wextra -Werror -fsyntax-only labs/lab07/src/*.c
 ```
 
-The xv6 sources in Labs 2, 4, 6, and 8 are intended to be copied into the
+Labs 9 and 10 include host-side behavior checks for the Linux program and the
+xv6 `trace` user command:
+
+```bash
+python3 -m unittest labs/lab09/tests/test_syscalls.py labs/lab10/tests/test_trace_program.py -v
+```
+
+The xv6 sources in Labs 2, 4, 6, 8, and 10 are intended to be copied into the
 `user/` directory of an xv6-riscv checkout and registered using the accompanying
 `Makefile.uprogs` fragment.

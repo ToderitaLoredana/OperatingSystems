@@ -1,7 +1,7 @@
-# Operating Systems Laboratory Works 1–10
+# Operating Systems Laboratory Works 1–13
 
 This repository contains the task sheets, implementation files, and reports for
-Laboratory Works 1 through 10 from the Operating Systems course (FCIM/FAF, UTM).
+Laboratory Works 1 through 13 from the Operating Systems course (FCIM/FAF, UTM).
 
 Student: **Tacu Loredana**
 
@@ -21,6 +21,9 @@ Group: **FAF-242**
 | 8 | The Same Calls Inside xv6 | [`labs/lab08`](labs/lab08) | [`reports/labs07-08`](reports/labs07-08) |
 | 9 | Watching System Calls with strace | [`labs/lab09`](labs/lab09) | [`reports/labs09-10`](reports/labs09-10) |
 | 10 | Adding the trace System Call to xv6 | [`labs/lab10`](labs/lab10) | [`reports/labs09-10`](reports/labs09-10) |
+| 11 | The Race and the Semaphore | [`labs/lab11`](labs/lab11) | [`reports/labs11-13`](reports/labs11-13) |
+| 12 | Producer, Consumer and the Other Tools | [`labs/lab12`](labs/lab12) | [`reports/labs11-13`](reports/labs11-13) |
+| 13 | Semaphores in Your Own Kernel | [`labs/lab13`](labs/lab13) | [`reports/labs11-13`](reports/labs11-13) |
 
 Combined reports are stored once and linked from both relevant laboratory rows.
 Editable DOCX and final PDF versions are included where available.

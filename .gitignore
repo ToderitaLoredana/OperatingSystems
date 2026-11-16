@@ -5,6 +5,7 @@ __pycache__/
 *.out
 
 # Local build and run artifacts
+labs/*/bin/
 out.txt
 access.log
 report.log

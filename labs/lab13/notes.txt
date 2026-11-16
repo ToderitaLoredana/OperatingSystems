@@ -1,0 +1,9 @@
+Laboratory Work No. 13 - Observe Answers
+
+1. Without the lock, every character is printed by a separate write system call. One 30-character line plus its newline therefore costs 31 system calls, and the scheduler can switch processes between any two calls, mixing A and b characters.
+
+2. sem_down(3) before the character loop and sem_up(3) after it make the entire line a critical section.
+
+3. sem_up wakes every process sleeping on the semaphore address, but only one may acquire the spinlock first and take the available unit. The others can wake and find the value back at 0, so sem_down must recheck with while.
+
+4. If sem_down slept while holding s->lock, sem_up could never acquire that spinlock to increase the value and wake the sleeper. The waiting process and every process trying to use the semaphore would be stuck.
